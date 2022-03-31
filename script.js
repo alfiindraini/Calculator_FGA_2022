@@ -39,8 +39,13 @@ const inputOperator = (operator) => {
     if(calculationOperator ===  ''){
         prevNum = currentNumber;
     }
+    else{
+        calculate();
+        updateScreen(currentNumber);
+        prevNum = currentNumber;
+    }
     calculationOperator = operator;
-    currentNumber = '';
+    currentNumber = '0';
 }
 
 //Menampilkan Hasil "=" 
